@@ -1,0 +1,141 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
+a {
+	color: gold;
+}
+a:visited {
+	color: orangered;
+}
+a:hover {
+	color: crimson;
+}
+a:active {
+	color: orangered;
+}
+body {
+	background: crimson;
+	color: #111;
+	font: 16px 'Open Sans', Arial, sans-serif;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+footer {
+	background: white;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+}
+header {
+	background: white;
+}
+header #logo {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+	width: 100px;
+}
+header #titulo {
+	display: inline-block;
+	font-size: 2em;
+	line-height: 100px;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+nav {
+	background: white;
+	border-bottom: 3px solid crimson;
+	border-top: 3px solid crimson;
+}
+nav ul {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	color: crimson;
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: .25em .5em;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	background: crimson;
+	color: gold;
+}
+nav ul li #volver_nav {
+	background: crimson;
+	color: gold;
+	padding: .25em;
+}
+nav ul li #volver_nav:hover {
+	background: gold;
+	color: crimson;
+}
+section {
+	background: white;
+}
+#proyectos {
+}
+#proyectos h2 {
+	font-size: 1.75em;
+	margin: 0;
+	text-align: center;
+}
+#proyectos .proyecto {
+	position: relative;
+	margin: 1%;
+	width: 98%;
+}
+#proyectos .proyecto .capitulos_proyecto,
+#proyectos .proyecto .estado_proyecto,
+#proyectos .proyecto .nombre_proyecto,
+#proyectos .proyecto .ver_proyecto {
+	background: crimson;
+	color: gold;
+	font-size: 1em;
+	max-width: 50%;
+	padding: .5em;
+	position: absolute;
+}
+#proyectos .proyecto .capitulos_proyecto {
+	background: crimson;
+	bottom: 5px;
+	position: absolute;
+	left: 0;
+}
+#proyectos .proyecto .estado_proyecto {
+	background: crimson;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#proyectos .proyecto .nombre_proyecto {
+	background: crimson;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+#proyectos .proyecto .portada_proyecto {
+}
+#proyectos .proyecto .ver_proyecto {
+	background: crimson;
+	bottom: 5px;
+	position: absolute;
+	right: 0;
+}
+#proyectos .proyecto .ver_proyecto:hover {
+}
