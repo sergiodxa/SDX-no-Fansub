@@ -1,7 +1,7 @@
-Fansub-CMS
+SDX no Fansub
 ==========
 
-Sistema de administración de contenidos pensado para fansubs.
+Sistema de administración de contenidos de SDX no Fansub.
 
 Tareas hechas
 ==========
