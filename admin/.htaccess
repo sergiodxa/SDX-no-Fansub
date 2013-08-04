@@ -1,0 +1,5 @@
+AuthUserFile /home/sergio/.htpasswd
+AuthName SDXSub
+AuthType Basic
+
+require user sergiodxa

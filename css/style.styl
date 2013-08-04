@@ -1,0 +1,631 @@
+// Variables
+fuente = 16px
+dorado = gold
+carmesi = rgb(220,20,40)
+blanco = snow
+// Mixins
+box-sizing()
+	box-sizing border-box
+	-moz-box-sizing border-box
+	-webkit-box-sizing border-box
+transition()
+	transition all arguments
+	-moz-transition all arguments
+	-webkit-transition all arguments
+// Fuentes
+@font-face
+	font-family Oswald
+	font-style normal
+	font-weight 400
+	src local('Oswald Regular'), local('Oswald-Regular'), url("http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff") format('woff')
+// Estilos
+*
+	vertical-align top
+a
+	color red
+	text-decoration none
+	&:hover
+		text-decoration underline
+body
+	background carmesi
+	color black
+	font fuente Helvetica, Arial, sans-serif
+	margin 0 auto
+	max-width 1000px
+footer
+	background blanco
+	border-top fuente*.25 solid carmesi
+	box-sizing 0
+	padding fuente*.5
+	text-align center
+	width 100%
+h1
+	font-size fuente*2
+	margin 0
+	padding 0
+	text-align center
+h1, h2, h3
+	font-family 'Oswald', sans-serif
+header
+	background blanco
+	box-sizing 0
+	padding .25em
+	width 100%
+img
+	max-width 100%
+nav
+	background blanco
+	width 100%
+	ul
+		box-sizing 0
+		font-size 0
+		list-style none
+		margin 0
+		padding 0
+		text-align center
+		width 100%
+		li
+			display inline-block
+			font-size fuente
+			width 50%
+			a
+				display block
+				padding 5px 25px
+				text-align center
+				transition (.25s)
+				&:hover
+					background carmesi
+					color dorado
+					text-decoration none
+section
+	background blanco
+	width 100%
+	h2
+		border fuente*.25 solid carmesi
+		border-left none
+		border-right none
+		font-size fuente*1.5
+		margin 0
+		padding fuente*.5
+		text-align center
+#cont_pagina
+		h3
+			margin 0
+			padding fuente*.5
+		p
+			margin 0
+			padding fuente*.5
+#disqus_thread
+	display none
+	margin 5px
+#error
+	background carmesi
+	box-sizing 0
+	color white
+	display inline-block
+	margin .5%
+	padding fuente*.25
+	text-align center
+	width 99%
+	h3
+		font-size fuente*2
+#pagina
+	text-align justify
+#proyectos
+	box-sizing 0
+	font-size 0
+#riasimagen
+	bottom 0
+	display none
+	position fixed
+	right 0
+.alt_anime
+	display none
+.anime
+	background carmesi
+	border 1px solid carmesi
+	box-sizing 0
+	color white
+	display inline-block
+	margin .5%
+	position relative
+	width 99%
+	&:hover
+		.alt_anime
+			display block
+		.mini_anime
+			display none
+.autor_blog
+	color carmesi
+	font-size fuente*.75
+	margin 0
+	padding 5px 10px
+.capitulo_anime
+	background carmesi
+	border-radius 0 fuente*.5 fuente*.5 0
+	color dorado
+	display block
+	font-size fuente*1.25
+	left 0
+	padding fuente*.25
+	position absolute
+	top fuente*.5
+.capitulos_proyecto
+	bottom 10px
+	left 10px
+.capitulos_proyecto, .estado_proyecto
+	background carmesi
+	color dorado
+	font-size fuente
+	padding fuente*.25
+	position absolute
+.descargas_anime
+	box-sizing 0
+	display block
+	font-size 0
+	text-align center
+	width 100%
+	a
+		color dorado
+		display inline-block
+		font-size fuente
+		margin 0 fuente*.5
+		width fuente
+		img
+			height auto
+	b
+		font-size fuente
+		display block
+		padding fuente*.5
+.entrada_blog
+	display inline-block
+	font-size fuente
+	margin .5%
+	position: relative
+	width 99%
+	p
+		margin 0
+		padding 5px
+		text-align justify
+.estado_proyecto
+	bottom 47px
+	left 10px
+.imagen_anime
+	width 100%
+.leer_blog
+	background carmesi
+	bottom 0
+	color dorado
+	font-size fuente*.8
+	padding 5px
+	position absolute
+	right 0
+.mini_anime
+	display block
+.nombre_proyecto
+	background carmesi
+	color dorado
+	font-size fuente*1.125
+	left 10px
+	margin 0
+	padding 2.5px
+	position absolute
+	right 10px
+	text-align center
+	top 10px
+.proyecto
+	display inline-block
+	font-size fuente
+	margin .5%
+	position relative
+	width 99%
+.portada_proyecto
+	max-width 100%
+	z-index 1
+.titulo_anime
+	box-sizing 0
+	display block
+	font-size fuente
+	margin 0
+	padding fuente*.25 fuente*.5
+	text-align center
+.titulo_blog
+	border-bottom 1px solid carmesi
+	font-size fuente*1.25
+	margin 0
+	padding 5px
+.ver_proyecto
+	background carmesi
+	bottom 10px
+	color dorado
+	font-size fuente*1.125
+	margin 0
+	padding fuente*.25 fuente*.5
+	position absolute
+	right 10px
+	text-align center
+	&:hover
+		background dorado
+		color carmesi
+		text-decoration none
+// estilos viejos
+#cpanel
+	box-sizing 0
+	font-size 0
+	div
+		box-sizing 0
+		display inline-block
+		width 50%
+		div
+			box-sizing 0
+			font-size fuente
+			text-align center
+			width 33.33333%
+			a.boton
+				background carmesi
+				border-radius 45px
+				color dorado
+				display block
+				font-size fuente*2
+				margin 0 auto
+				padding 6.5px 0
+				width 50px
+				&:hover 
+					background dorado
+					color carmesi
+		h3 
+			font-size fuente*1.5
+			text-align center
+	form 
+		font-size fuente
+		padding fuente*.75
+		input 
+			display block
+			width 100%
+			&#enviar 
+				box-sizing border-box
+				-moz-box-sizing border-box
+				-webkit-box-sizing border-box
+				margin fuente*.5 auto
+				padding fuente*.5
+				width 50%
+		label 
+			display block
+		select 
+			width 100%
+	#mensaje 
+		background carmesi
+		border 1px solid carmesi
+		box-sizing border-box
+		-moz-box-sizing border-box
+		-webkit-box-sizing border-box
+		color #fff
+		display inline-block
+		font-size fuente
+		margin 5px
+		padding fuente
+		position relative
+		text-align center
+		width 99%
+		a 
+			color dorado
+			font-size fuente*1.5
+			margin 0
+			padding 0
+		h3 
+			font-size fuente*2
+			margin 0
+			padding fuente*.5
+	.capitulo 
+		background carmesi
+		border 1px solid carmesi
+		color #fff
+		display inline-block
+		font-size fuente
+		margin 5px
+		width 986px
+		&.activo
+			div 
+				display block
+			.nombre 
+				display none
+		div 
+			display none
+			position relative
+			width 100%
+			a
+				border 2px solid dorado
+				box-sizing border-box
+				-moz-box-sizing border-box
+				-webkit-box-sizing border-box
+				box-shadow 0 5px 0 dorado
+				color #fff
+				display inline-block
+				margin 5px
+				padding fuente
+				text-align center
+				width 48fuente*.5
+				&:active 
+					box-shadow none
+					margin-top 10px
+			form 
+				padding 0
+				.borrar 
+					background carmesi
+					border 2px solid dorado
+					box-sizing border-box
+					-moz-box-sizing border-box
+					-webkit-box-sizing border-box
+					box-shadow 0 5px 0 dorado
+					color #fff
+					display inline-block
+					margin 5px
+					padding fuente
+					width 48fuente*.5
+					&:active 
+						box-shadow none
+						margin-top 10px
+			h3 
+				box-sizing border-box
+				-moz-box-sizing border-box
+				-webkit-box-sizing border-box
+				display inline-block
+				font-size fuente
+				margin 0
+				padding fuente*.25 fuente*.5
+				width 50%
+			img 
+				float left
+				height 137px
+				width 24fuente*.25
+			span 
+				background carmesi
+				border-radius 0 fuente*.5 fuente*.5 0
+				color dorado
+				display block
+				font-size 20px
+				left 0
+				padding fuente*.25
+				position absolute
+				top fuente*.5
+		.nombre 
+			box-sizing border-box
+			-moz-box-sizing border-box
+			-webkit-box-sizing border-box
+			display inline-block
+			font-size fuente
+			margin 0
+			padding fuente*.25 fuente*.5
+		&#error 
+			box-sizing border-box
+			-moz-box-sizing border-box
+			-webkit-box-sizing border-box
+			padding fuente
+			text-align center
+			width 99%
+			h3 
+				font-size fuente*2
+	.entrada 
+		display inline-block
+		font-size fuente
+		margin 5px
+		position relative
+		width 490px
+		a 
+			background carmesi
+			bottom 0
+			color dorado
+			font-size fuente*.75
+			padding 5px
+			position absolute
+			right 0
+		div 
+			color carmesi
+			font-size fuente*.75
+			margin 0
+			padding 5px 10px
+		form 
+			bottom 0
+			padding 0
+			position absolute
+			right 0
+			input 
+				background carmesi
+				border none
+				color dorado
+				font-size fuente*.75
+				padding 5px
+		h3 
+			border-bottom 1px solid carmesi
+			font-size 20px
+			margin 0
+			padding 5px
+	p 
+		margin 0
+		padding 5px
+		text-align justify
+	.menu 
+		border-bottom 1px solid carmesi
+		font-size fuente
+		padding 5px
+		width 990px
+		a 
+			display inline-block
+			float right
+			&:hover 
+				text-decoration underline
+		form 
+			display inline-block
+			float right
+			padding 0
+			input 
+				background blanco
+				border none
+				color carmesi
+		span
+			a 
+				float none
+	.proyecto 
+		display inline-block
+		font-size fuente
+		margin .5%
+		position relative
+		width 24%
+		h3 
+			background carmesi
+			color dorado
+			font-size 1fuente*.5
+			left 5px
+			margin 0
+			padding 2.5px
+			position absolute
+			right 5px
+			text-align center
+			top 5px
+		img 
+			width 100%
+			z-index 1
+		form 
+			bottom 5px
+			padding 0
+			position absolute
+			right 5px
+		.borrar 
+			background carmesi
+			border none
+			color dorado
+			display inline-block
+			font-size fuente
+			margin 0
+			padding fuente*.25
+			text-align center
+		span 
+			background carmesi
+			color dorado
+			font-size fuente
+			padding fuente*.25
+			position absolute
+			&.capitulos 
+				bottom 5px
+				left 5px
+			&.estado 
+				bottom 37px
+				left 5px
+		.modificar 
+			background carmesi
+			bottom 5px
+			border none
+			color dorado
+			display inline-block
+			font-size fuente
+			margin 0
+			padding fuente*.25
+			position absolute
+			right 5px
+			text-align center
+&#foro
+	table
+		width 100%
+		tr
+			border-bottom 1px solid carmesi
+			width 100%
+			&:nth-of-type(odd)
+				background dorado
+				color carmesi
+				a
+					color carmesi
+			.autor
+				border-left 1px solid carmesi
+				padding 5px
+				text-align center
+				width 12.5%
+			.fecha
+				border-left 1px solid carmesi
+				padding 5px
+				text-align center
+				width 12.5%
+			.titulo
+				padding 5px
+				width 75%
+	#post
+		border-bottom 1px solid carmesi
+		padding 5px
+		width 990px
+		header
+			border-bottom 1px solid carmesi
+			margin 0
+			padding 5px
+			width 990px
+		p
+			margin 0
+			padding 15px
+	.respuesta
+		border-bottom 1px solid carmesi
+		margin 10px
+		width 980px
+		header
+			border-bottom 1px solid carmesi
+			margin 0
+			padding 5px
+			width 980px
+		p
+			margin 0
+			padding 10px
+// ScrollBar NochesDeCode.com.ar
+::-webkit-scrollbar
+	width fuente*.5
+::-webkit-scrollbar-track
+	-webkit-box-shadow dorado
+	-webkit-border-radius 0
+	border-radius 0
+::-webkit-scrollbar-track-piece
+	background-color carmesi
+::-webkit-scrollbar-thumb
+	-webkit-border-radius 0
+	border-radius 0
+	background dorado
+	-webkit-box-shadow inset 0 0 6px blanco
+::-webkit-scrollbar-thumb:window-inactive
+	background dorado
+// De 640px para arriba
+@media screen and (min-width: 640px) {
+	#disqus_thread {
+		display block
+	}
+	.descargas_anime {
+		display inline-block
+		width 50%
+	}
+	.imagen_anime {
+		float left
+		width 50%
+	}
+	.titulo_anime {
+		display inline-block
+		width 50%
+	}
+}
+// Cambiar a diseño para desktop
+@media screen and (min-width: 728px) {
+	nav ul li {
+		width auto
+	}
+	.proyecto {
+		width 49%
+	}
+	.anime {
+		width 49%
+	}
+}
+// Mostrar imagen de una chica si el ancho es suficiente
+@media screen and (min-width: 1300px) {
+	#riasimagen {
+		display block
+	}
+}
+// No mostrar nada si el ancho es menor a 320px
+@media screen and (max-width: 320px) {
+	* {
+		display: none;
+	}
+}

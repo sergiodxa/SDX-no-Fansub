@@ -1,141 +1,764 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
-a {
-	color: gold;
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url("http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff") format('woff');
 }
-a:visited {
-	color: orangered;
+* {
+  vertical-align: top;
+}
+a {
+  color: #f00;
+  text-decoration: none;
 }
 a:hover {
-	color: crimson;
-}
-a:active {
-	color: orangered;
+  text-decoration: underline;
 }
 body {
-	background: crimson;
-	color: #111;
-	font: 16px 'Open Sans', Arial, sans-serif;
-	margin: 0 auto;
-	max-width: 1200px;
+  background: #dc1428;
+  color: #000;
+  font: 16px Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 footer {
-	background: white;
-	margin: 0;
-	padding: 1em;
-	text-align: center;
+  background: #fffffa;
+  border-top: 4px solid #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
 }
-footer p {
-	margin: 0;
+h1 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
 }
 header {
-	background: white;
-}
-header #logo {
-	display: inline-block;
-	font-size: 0;
-	vertical-align: top;
-	width: 100px;
-}
-header #titulo {
-	display: inline-block;
-	font-size: 2em;
-	line-height: 100px;
-	margin: 0;
-	padding: 0;
+  background: #fffffa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0.25em;
+  width: 100%;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 nav {
-	background: white;
-	border-bottom: 3px solid crimson;
-	border-top: 3px solid crimson;
+  background: #fffffa;
+  width: 100%;
 }
 nav ul {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	font-size: 0;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
 }
 nav ul li {
-	display: inline-block;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
 }
 nav ul li a {
-	color: crimson;
-	display: block;
-	font-size: 1rem;
-	font-weight: bold;
-	padding: .25em .5em;
-	text-decoration: none;
+  display: block;
+  padding: 5px 25px;
+  text-align: center;
+  transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 nav ul li a:hover {
-	background: crimson;
-	color: gold;
-}
-nav ul li #volver_nav {
-	background: crimson;
-	color: gold;
-	padding: .25em;
-}
-nav ul li #volver_nav:hover {
-	background: gold;
-	color: crimson;
+  background: #dc1428;
+  color: #ffd700;
+  text-decoration: none;
 }
 section {
-	background: white;
+  background: #fffffa;
+  width: 100%;
+}
+section h2 {
+  border: 4px solid #dc1428;
+  border-left: none;
+  border-right: none;
+  font-size: 24px;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+#cont_pagina h3 {
+  margin: 0;
+  padding: 8px;
+}
+#cont_pagina p {
+  margin: 0;
+  padding: 8px;
+}
+#disqus_thread {
+  display: none;
+  margin: 5px;
+}
+#error {
+  background: #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  margin: 0.5%;
+  padding: 4px;
+  text-align: center;
+  width: 99%;
+}
+#error h3 {
+  font-size: 32px;
+}
+#pagina {
+  text-align: justify;
 }
 #proyectos {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 0;
 }
-#proyectos h2 {
-	font-size: 1.75em;
-	margin: 0;
-	text-align: center;
+#riasimagen {
+  bottom: 0;
+  display: none;
+  position: fixed;
+  right: 0;
 }
-#proyectos .proyecto {
-	position: relative;
-	margin: 1%;
-	width: 98%;
+.alt_anime {
+  display: none;
 }
-#proyectos .proyecto .capitulos_proyecto,
-#proyectos .proyecto .estado_proyecto,
-#proyectos .proyecto .nombre_proyecto,
-#proyectos .proyecto .ver_proyecto {
-	background: crimson;
-	color: gold;
-	font-size: 1em;
-	max-width: 50%;
-	padding: .5em;
-	position: absolute;
+.anime {
+  background: #dc1428;
+  border: 1px solid #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  margin: 0.5%;
+  position: relative;
+  width: 99%;
 }
-#proyectos .proyecto .capitulos_proyecto {
-	background: crimson;
-	bottom: 5px;
-	position: absolute;
-	left: 0;
+.anime:hover .alt_anime {
+  display: block;
 }
-#proyectos .proyecto .estado_proyecto {
-	background: crimson;
-	position: absolute;
-	right: 0;
-	top: 0;
+.anime:hover .mini_anime {
+  display: none;
 }
-#proyectos .proyecto .nombre_proyecto {
-	background: crimson;
-	left: 0;
-	margin: 0;
-	position: absolute;
-	top: 0;
+.autor_blog {
+  color: #dc1428;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
 }
-#proyectos .proyecto .portada_proyecto {
+.capitulo_anime {
+  background: #dc1428;
+  border-radius: 0 8px 8px 0;
+  color: #ffd700;
+  display: block;
+  font-size: 20px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  top: 8px;
 }
-#proyectos .proyecto .ver_proyecto {
-	background: crimson;
-	bottom: 5px;
-	position: absolute;
-	right: 0;
+.capitulos_proyecto {
+  bottom: 10px;
+  left: 10px;
 }
-#proyectos .proyecto .ver_proyecto:hover {
+.capitulos_proyecto,
+.estado_proyecto {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 16px;
+  padding: 4px;
+  position: absolute;
+}
+.descargas_anime {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: block;
+  font-size: 0;
+  text-align: center;
+  width: 100%;
+}
+.descargas_anime a {
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 8px;
+  width: 16px;
+}
+.descargas_anime a img {
+  height: auto;
+}
+.descargas_anime b {
+  font-size: 16px;
+  display: block;
+  padding: 8px;
+}
+.entrada_blog {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 99%;
+}
+.entrada_blog p {
+  margin: 0;
+  padding: 5px;
+  text-align: justify;
+}
+.estado_proyecto {
+  bottom: 47px;
+  left: 10px;
+}
+.imagen_anime {
+  width: 100%;
+}
+.leer_blog {
+  background: #dc1428;
+  bottom: 0;
+  color: #ffd700;
+  font-size: 12.8px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+}
+.mini_anime {
+  display: block;
+}
+.nombre_proyecto {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 18px;
+  left: 10px;
+  margin: 0;
+  padding: 2.5px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 10px;
+}
+.proyecto {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 99%;
+}
+.portada_proyecto {
+  max-width: 100%;
+  z-index: 1;
+}
+.titulo_anime {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 8px;
+  text-align: center;
+}
+.titulo_blog {
+  border-bottom: 1px solid #dc1428;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+.ver_proyecto {
+  background: #dc1428;
+  bottom: 10px;
+  color: #ffd700;
+  font-size: 18px;
+  margin: 0;
+  padding: 4px 8px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+}
+.ver_proyecto:hover {
+  background: #ffd700;
+  color: #dc1428;
+  text-decoration: none;
+}
+#cpanel {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 0;
+}
+#cpanel div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+}
+#cpanel div div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  width: 33.33333%;
+}
+#cpanel div div a.boton {
+  background: #dc1428;
+  border-radius: 45px;
+  color: #ffd700;
+  display: block;
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 6.5px 0;
+  width: 50px;
+}
+#cpanel div div a.boton:hover {
+  background: #ffd700;
+  color: #dc1428;
+}
+#cpanel div h3 {
+  font-size: 24px;
+  text-align: center;
+}
+#cpanel form {
+  font-size: 16px;
+  padding: 12px;
+}
+#cpanel form input {
+  display: block;
+  width: 100%;
+}
+#cpanel form input#enviar {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 8px auto;
+  padding: 8px;
+  width: 50%;
+}
+#cpanel form label {
+  display: block;
+}
+#cpanel form select {
+  width: 100%;
+}
+#cpanel #mensaje {
+  background: #dc1428;
+  border: 1px solid #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  width: 99%;
+}
+#cpanel #mensaje a {
+  color: #ffd700;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+#cpanel #mensaje h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 8px;
+}
+#cpanel .capitulo {
+  background: #dc1428;
+  border: 1px solid #dc1428;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 986px;
+}
+#cpanel .capitulo.activo div {
+  display: block;
+}
+#cpanel .capitulo.activo .nombre {
+  display: none;
+}
+#cpanel .capitulo div {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+#cpanel .capitulo div a {
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 5px 0 #ffd700;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 16px;
+  text-align: center;
+  width: 48 8px;
+}
+#cpanel .capitulo div a:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+#cpanel .capitulo div form {
+  padding: 0;
+}
+#cpanel .capitulo div form .borrar {
+  background: #dc1428;
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 5px 0 #ffd700;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 16px;
+  width: 48 8px;
+}
+#cpanel .capitulo div form .borrar:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+#cpanel .capitulo div h3 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 8px;
+  width: 50%;
+}
+#cpanel .capitulo div img {
+  float: left;
+  height: 137px;
+  width: 24 4px;
+}
+#cpanel .capitulo div span {
+  background: #dc1428;
+  border-radius: 0 8px 8px 0;
+  color: #ffd700;
+  display: block;
+  font-size: 20px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  top: 8px;
+}
+#cpanel .capitulo .nombre {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 8px;
+}
+#cpanel .capitulo#error {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  width: 99%;
+}
+#cpanel .capitulo#error h3 {
+  font-size: 32px;
+}
+#cpanel .entrada {
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  position: relative;
+  width: 490px;
+}
+#cpanel .entrada a {
+  background: #dc1428;
+  bottom: 0;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+}
+#cpanel .entrada div {
+  color: #dc1428;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
+}
+#cpanel .entrada form {
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+#cpanel .entrada form input {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+}
+#cpanel .entrada h3 {
+  border-bottom: 1px solid #dc1428;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+#cpanel p {
+  margin: 0;
+  padding: 5px;
+  text-align: justify;
+}
+#cpanel .menu {
+  border-bottom: 1px solid #dc1428;
+  font-size: 16px;
+  padding: 5px;
+  width: 990px;
+}
+#cpanel .menu a {
+  display: inline-block;
+  float: right;
+}
+#cpanel .menu a:hover {
+  text-decoration: underline;
+}
+#cpanel .menu form {
+  display: inline-block;
+  float: right;
+  padding: 0;
+}
+#cpanel .menu form input {
+  background: #fffffa;
+  border: none;
+  color: #dc1428;
+}
+#cpanel .menu span a {
+  float: none;
+}
+#cpanel .proyecto {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 24%;
+}
+#cpanel .proyecto h3 {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 1 8px;
+  left: 5px;
+  margin: 0;
+  padding: 2.5px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 5px;
+}
+#cpanel .proyecto img {
+  width: 100%;
+  z-index: 1;
+}
+#cpanel .proyecto form {
+  bottom: 5px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+}
+#cpanel .proyecto .borrar {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+}
+#cpanel .proyecto span {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 16px;
+  padding: 4px;
+  position: absolute;
+}
+#cpanel .proyecto span.capitulos {
+  bottom: 5px;
+  left: 5px;
+}
+#cpanel .proyecto span.estado {
+  bottom: 37px;
+  left: 5px;
+}
+#cpanel .proyecto .modificar {
+  background: #dc1428;
+  bottom: 5px;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+}
+&#foro table {
+  width: 100%;
+}
+&#foro table tr {
+  border-bottom: 1px solid #dc1428;
+  width: 100%;
+}
+&#foro table tr:nth-of-type(odd) {
+  background: #ffd700;
+  color: #dc1428;
+}
+&#foro table tr:nth-of-type(odd) a {
+  color: #dc1428;
+}
+&#foro table tr .autor {
+  border-left: 1px solid #dc1428;
+  padding: 5px;
+  text-align: center;
+  width: 12.5%;
+}
+&#foro table tr .fecha {
+  border-left: 1px solid #dc1428;
+  padding: 5px;
+  text-align: center;
+  width: 12.5%;
+}
+&#foro table tr .titulo {
+  padding: 5px;
+  width: 75%;
+}
+&#foro #post {
+  border-bottom: 1px solid #dc1428;
+  padding: 5px;
+  width: 990px;
+}
+&#foro #post header {
+  border-bottom: 1px solid #dc1428;
+  margin: 0;
+  padding: 5px;
+  width: 990px;
+}
+&#foro #post p {
+  margin: 0;
+  padding: 15px;
+}
+&#foro .respuesta {
+  border-bottom: 1px solid #dc1428;
+  margin: 10px;
+  width: 980px;
+}
+&#foro .respuesta header {
+  border-bottom: 1px solid #dc1428;
+  margin: 0;
+  padding: 5px;
+  width: 980px;
+}
+&#foro .respuesta p {
+  margin: 0;
+  padding: 10px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: #ffd700;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #dc1428;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #ffd700;
+  -webkit-box-shadow: inset 0 0 6px #fffffa;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ffd700;
+}
+@media screen and (min-width: 640px) {
+  #disqus_thread {
+    display: block;
+  }
+  .descargas_anime {
+    display: inline-block;
+    width: 50%;
+  }
+  .imagen_anime {
+    float: left;
+    width: 50%;
+  }
+  .titulo_anime {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 728px) {
+  nav ul li {
+    width: auto;
+  }
+  .proyecto {
+    width: 49%;
+  }
+  .anime {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #riasimagen {
+    display: block;
+  }
+}
+@media screen and (max-width: 320px) {
+  * {
+    display: none;
+  }
 }
