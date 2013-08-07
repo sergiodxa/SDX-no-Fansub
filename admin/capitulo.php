@@ -205,6 +205,40 @@ elseif ($_GET[s]=="borrado") {
 			<a href="/admin/index.php" title="Volver al Panel de Control">Volver al Panel de Control</a>
 		</div>';
 }
+// Por defecto cargamos la siguiente página
+else {
+	$peticion = mysql_query("SELECT * FROM capitulos ORDER BY anime ASC", $conexion);
+	if ($serie = mysql_fetch_array($peticion)) {
+		echo '
+		<h2>Capítulos</h2>
+';
+		do {
+		echo '
+		<article class="capitulo">
+			<h3 class="nombre">'.$serie["anime"].' - '.$serie["numero"].' - '.$serie["titulo"].'</h3>
+			<div>
+				<img src="/img/animes/'.$serie["link"].'/mini-'.$serie["numero"].'.jpg" />
+				<img src="/img/animes/'.$serie["link"].'/alt-'.$serie["numero"].'.jpg" />
+				<span class="numero">'.$serie["numero"].'</span>
+				<h3>'.$serie["anime"].' - '.$serie["titulo"].'</h3>
+				<a class="modificar" href="/admin/capitulo.php?c='.$serie["ID"].'" title="Modificar este capítulo">Modificar</a>
+				<form method="post" action="/admin/capitulo.php?s=borrado">
+					<input type="hidden" name="ID" value="'.$capitulos["ID"].'" />
+					<input type="hidden" name="link" value="'.$capitulos["link"].'" />
+					<input type="submit" name="enviar" value="Borrar" class="borrar" />
+				</form>
+			</div>
+		</article>';
+		}
+		while ($serie = mysql_fetch_array($peticion));
+	}
+	else {
+		echo '
+		<article id="mensaje">
+			<h3>No hay capítulos publicados.</h3>
+		</article>';
+	}
+}
 
 // Cerramos la etiqueta section
 echo '
