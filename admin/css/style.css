@@ -326,6 +326,83 @@ section h2 {
 .capitulo#error h3 {
   font-size: 32px;
 }
+.entrada {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 99%;
+}
+.entrada a {
+  background: #dc1428;
+  bottom: 0;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+}
+.entrada div {
+  color: #dc1428;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
+}
+.entrada form {
+  bottom: 29px;
+  padding: 0 !important;
+  position: absolute;
+  right: 0;
+}
+.entrada form input {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+}
+.entrada h4 {
+  border-bottom: 1px solid #dc1428;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+p {
+  margin: 0;
+  padding: 5px;
+  text-align: justify;
+}
+.menu,
+.pagina {
+  border-bottom: 1px solid #dc1428;
+  font-size: 16px;
+  padding: 5px;
+}
+.menu a,
+.pagina a {
+  display: inline-block;
+  float: right;
+}
+.menu a:hover,
+.pagina a:hover {
+  text-decoration: underline;
+}
+.menu form,
+.pagina form {
+  display: inline-block;
+  float: right;
+  padding: 0 !important;
+}
+.menu form input,
+.pagina form input {
+  background: #fffffa;
+  border: none;
+  color: #dc1428;
+}
+.menu span a,
+.pagina span a {
+  float: none;
+}
 .proyecto {
   display: inline-block;
   font-size: 16px;

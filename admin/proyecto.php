@@ -82,7 +82,7 @@ elseif ($_GET[s]=="modificado") {
 	echo '
 			<div id="mensaje">
 				<h3>El proyecto se ha modificado exitosamente.</h3>
-				<a href="/admin/proyecto.php?s=modificar" title="Seguir modificando">Seguir modificando</a><br />
+				<a href="/admin/proyecto.php" title="Seguir modificando">Seguir modificando</a><br />
 				<a href="/admin/index.php" title="Volver al Panel de Control">Volver al Panel de Control</a>
 			</div>';
 }
@@ -98,7 +98,7 @@ elseif ($_GET[s]=="borrado") {
 	echo '
 			<div id="mensaje">
 				<h3>El proyecto se ha borrado exitosamente.</h3>
-				<a href="/admin/proyecto.php?s=borrar" title="Seguir borrando">Seguir borrando</a><br />
+				<a href="/admin/proyecto.php" title="Seguir borrando">Seguir borrando</a><br />
 				<a href="/admin/index.php" title="Volver al Panel de Control">Volver al Panel de Control</a>
 			</div>';
 }
