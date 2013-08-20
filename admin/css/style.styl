@@ -92,6 +92,7 @@ section
 	background carmesi
 	color dorado
 	border-radius 0 0 0 fuente
+	font-size fuente
 	padding fuente*.5
 	position absolute
 	right 0
@@ -117,12 +118,14 @@ section
 				a
 					display block
 					padding fuente*.25
-	article, section
+	section
+		box-sizing 0
 		display inline-block
-		font-size fuente
+		font-size 0
 		position relative
 		width 750px
 		h3
+			font-size fuente*1.25
 			margin 0
 			padding fuente*.5
 			text-align center
@@ -148,6 +151,10 @@ section
 				display block
 			select 
 				width 100%
+		p
+			font-size fuente
+			margin 0
+			padding fuente*.5
 #mensaje 
 	background carmesi
 	border 1px solid carmesi
@@ -181,8 +188,8 @@ section
 	color #fff
 	display inline-block
 	font-size fuente
-	margin fuente*.25 fuente*.5 !important
-	width 734px !important
+	margin fuente*.25 fuente*.5
+	width 734px
 	&.activo
 		div
 			display block
@@ -217,7 +224,7 @@ section
 				position absolute
 				right fuente*.25
 				top 51.609375px
-				width 91.75px
+				width 91.75px !important
 				&:active
 					box-shadow none
 					margin-top 10px
@@ -257,6 +264,66 @@ section
 		width 99%
 		h3 
 			font-size fuente*2
+.proyecto 
+	display inline-block
+	font-size fuente
+	margin .5%
+	position relative
+	width 49%
+	h4
+		background carmesi
+		color dorado
+		font-family 'Oswald'
+		font-size fuente*1.25
+		left 0
+		margin 0
+		padding 2.5px
+		position absolute
+		right 0
+		text-align center
+		top 0
+	img 
+		width 100%
+		z-index 1
+	form 
+		bottom 37px
+		margin 0
+		padding 0 !important
+		position absolute
+		right 5px
+	.borrar 
+		background carmesi
+		border none
+		color dorado
+		display inline-block
+		font-size fuente
+		margin 0
+		padding fuente*.25
+		text-align center
+	span 
+		background carmesi
+		color dorado
+		font-size fuente
+		padding fuente*.25
+		position absolute
+		&.capitulos 
+			bottom 5px
+			left 5px
+		&.estado 
+			bottom 37px
+			left 5px
+	.modificar 
+		background carmesi
+		bottom 5px
+		border none
+		color dorado
+		display inline-block
+		font-size fuente
+		margin 0
+		padding fuente*.25
+		position absolute
+		right 5px
+		text-align center
 // ScrollBar NochesDeCode.com.ar
 ::-webkit-scrollbar
 	width fuente*.5

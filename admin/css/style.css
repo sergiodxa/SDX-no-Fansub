@@ -103,6 +103,7 @@ section h2 {
   background: #dc1428;
   color: #ffd700;
   border-radius: 0 0 0 16px;
+  font-size: 16px;
   padding: 8px;
   position: absolute;
   right: 0;
@@ -136,30 +137,29 @@ section h2 {
   display: block;
   padding: 4px;
 }
-#cpanel article,
 #cpanel section {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   display: inline-block;
-  font-size: 16px;
+  font-size: 0;
   position: relative;
   width: 750px;
 }
-#cpanel article h3,
 #cpanel section h3 {
+  font-size: 20px;
   margin: 0;
   padding: 8px;
   text-align: center;
 }
-#cpanel article form,
 #cpanel section form {
   font-size: 16px;
   padding: 12px;
 }
-#cpanel article form input,
 #cpanel section form input {
   display: block;
   width: 100%;
 }
-#cpanel article form input#enviar,
 #cpanel section form input#enviar {
   background: #dc1428;
   border: 2px solid #ffd700;
@@ -172,18 +172,20 @@ section h2 {
   padding: 8px;
   width: 50%;
 }
-#cpanel article form input#enviar:active,
 #cpanel section form input#enviar:active {
   box-shadow: none;
   margin-top: 10px;
 }
-#cpanel article form label,
 #cpanel section form label {
   display: block;
 }
-#cpanel article form select,
 #cpanel section form select {
   width: 100%;
+}
+#cpanel section p {
+  font-size: 16px;
+  margin: 0;
+  padding: 8px;
 }
 #mensaje {
   background: #dc1428;
@@ -224,8 +226,8 @@ section h2 {
   color: #fff;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 8px !important;
-  width: 734px !important;
+  margin: 4px 8px;
+  width: 734px;
 }
 .capitulo.activo div {
   display: block;
@@ -270,7 +272,7 @@ section h2 {
   position: absolute;
   right: 4px;
   top: 51.609375px;
-  width: 91.75px;
+  width: 91.75px !important;
 }
 .capitulo div form .borrar:active {
   box-shadow: none;
@@ -323,6 +325,75 @@ section h2 {
 }
 .capitulo#error h3 {
   font-size: 32px;
+}
+.proyecto {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 49%;
+}
+.proyecto h4 {
+  background: #dc1428;
+  color: #ffd700;
+  font-family: 'Oswald';
+  font-size: 20px;
+  left: 0;
+  margin: 0;
+  padding: 2.5px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+.proyecto img {
+  width: 100%;
+  z-index: 1;
+}
+.proyecto form {
+  bottom: 37px;
+  margin: 0;
+  padding: 0 !important;
+  position: absolute;
+  right: 5px;
+}
+.proyecto .borrar {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+}
+.proyecto span {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 16px;
+  padding: 4px;
+  position: absolute;
+}
+.proyecto span.capitulos {
+  bottom: 5px;
+  left: 5px;
+}
+.proyecto span.estado {
+  bottom: 37px;
+  left: 5px;
+}
+.proyecto .modificar {
+  background: #dc1428;
+  bottom: 5px;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
 }
 ::-webkit-scrollbar {
   width: 8px;
