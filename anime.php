@@ -23,7 +23,7 @@ if ($serie = mysql_fetch_array($peticion)) {
 		<h3 class="titulo_anime">'.$serie["titulo"].'</h3>
 		<div class="descargas_anime">
 			<b>Descargar</b>';
-		if ($serie["subs"]==true) {
+		if ($serie["purista"]==true) {
 			echo '			<a class="purista_anime" href="'.$serie["purista"].'" title="Descargar los subtítulos puristas"><img src="/img/descargas/purista.png" alt="Puristas" /></a>';
 		}
 		if ($serie["weabo"]==true) {
