@@ -7,66 +7,21 @@ require '../static/nav.php'; // Carga la barra de navegación
 ?>
 	<section id="cpanel">
 		<h2>Panel de Control</h2>
-		<div>
-			<h3>Capítulos</h3>
-			<div>
-				<a href="/admin/capitulo.php?s=agregar" class="boton" title="Agregar nuevo capítulo">+</a>
-			</div>
-			<div>
-				<a href="/admin/capitulo.php?s=modificar" class="boton" title="Modificar capítulo">≠</a>
-			</div>
-			<div>
-				<a href="/admin/capitulo.php?s=borrar" class="boton" title="Borrar capítulo">-</a>
-			</div>
-		</div>
-		<div>
-			<h3>Proyectos</h3>
-			<div>
-				<a href="/admin/proyecto.php?s=agregar" class="boton" title="Agregar nuevo proyecto">+</a>
-			</div>
-			<div>
-				<a href="/admin/proyecto.php?s=modificar" class="boton" title="Modificar proyecto">≠</a>
-			</div>
-			<div>
-				<a href="/admin/proyecto.php?s=borrar" class="boton" title="Borrar proyecto">-</a>
-			</div>
-		</div>
-		<div>
-			<h3>Blog</h3>
-			<div>
-				<a href="/admin/entrada.php?s=publicar" class="boton" title="Publicar nueva entrada">+</a>
-			</div>
-			<div>
-				<a href="/admin/entrada.php?s=modificar" class="boton" title="Modificar entrada">≠</a>
-			</div>
-			<div>
-				<a href="/admin/entrada.php?s=borrar" class="boton" title="Borrar entrada">-</a>
-			</div>
-		</div>
-		<div>
-			<h3>Página</h3>
-			<div>
-				<a href="/admin/pagina.php?s=agregar" class="boton" title="Agregar nueva página">+</a>
-			</div>
-			<div>
-				<a href="/admin/pagina.php?s=modificar" class="boton" title="Modificar página">≠</a>
-			</div>
-			<div>
-				<a href="/admin/pagina.php?s=borrar" class="boton" title="Borrar página">-</a>
-			</div>
-		</div>
-		<div>
-			<h3>Menú</h3>
-			<div>
-				<a href="/admin/menu.php?s=agregar" class="boton" title="Agregar al menú">+</a>
-			</div>
-			<div>
-				<a href="/admin/menu.php?s=modificar" class="boton" title="Modificar menú">≠</a>
-			</div>
-			<div>
-				<a href="/admin/menu.php?s=borrar" class="boton" title="Borrar del menú">-</a>
-			</div>
-		</div>
+		<aside>
+			<ul>
+				<li><a href="/admin/capitulo.php" title="Agregar, modificar o borrar capítulos">Capítulos</a></li>
+				<li><a href="/admin/proyecto.php" title="Agregar, modificar o borrar proyectos">Proyectos</a></li>
+				<li><a href="/admin/entrada.php" title="Agregar, modificar o borrar entradas">Entradas</a></li>
+				<li><a href="/admin/pagina.php" title="Agregar, modificar o borrar páginas">Páginas</a></li>
+				<li><a href="/admin/menu.php" title="Agregar, modificar o borrar menú">Menú</a></li>
+			</ul>
+		</aside>
+		<article>
+			<h3>Bienvenido al Panel de control de SDX no  Fansub.</h3>
+			<p>
+				En el lado izquierdo hay una lista de secciones, desde ahí usted podrá acceder a los sitios para agregar, modificar o borrar capítulos, proyectos, entradas del blog, páginas o elementos del menú.
+			</p>
+		</article>
 	</section>
 <?
 require '../static/nav-admin.php'; // Carga la navegación del panel de control

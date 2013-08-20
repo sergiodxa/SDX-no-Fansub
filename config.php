@@ -2,7 +2,7 @@
 
 $db_user = "root";
 
-$db_pass = "odalisca";
+$db_pass = "";
 
 $db_server = "localhost";
 
