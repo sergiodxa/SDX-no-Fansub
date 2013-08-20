@@ -1,0 +1,469 @@
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url("http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff") format('woff');
+}
+* {
+  vertical-align: top;
+}
+a {
+  color: #f00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  background: #dc1428;
+  color: #000;
+  font: 16px Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+footer {
+  background: #fffffa;
+  border-top: 4px solid #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+}
+h1 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  background: #fffffa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0.25em;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  background: #fffffa;
+  width: 100%;
+}
+nav ul {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 16px;
+  width: 25%;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 25px;
+  text-align: center;
+  transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+nav ul li a:hover {
+  background: #dc1428;
+  color: #ffd700;
+  text-decoration: none;
+}
+section {
+  background: #fffffa;
+  width: 100%;
+}
+section h2 {
+  border: 4px solid #dc1428;
+  border-left: none;
+  border-right: none;
+  font-size: 24px;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+#riasimagen {
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+#cpanel {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 0;
+}
+#cpanel div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+}
+#cpanel div div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  width: 33.33333%;
+}
+#cpanel div div a.boton {
+  background: #dc1428;
+  border-radius: 45px;
+  color: #ffd700;
+  display: block;
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 6.5px 0;
+  width: 50px;
+}
+#cpanel div div a.boton:hover {
+  background: #ffd700;
+  color: #dc1428;
+}
+#cpanel div h3 {
+  font-size: 24px;
+  text-align: center;
+}
+#cpanel form {
+  font-size: 16px;
+  padding: 12px;
+}
+#cpanel form input {
+  display: block;
+  width: 100%;
+}
+#cpanel form input#enviar {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 8px auto;
+  padding: 8px;
+  width: 50%;
+}
+#cpanel form label {
+  display: block;
+}
+#cpanel form select {
+  width: 100%;
+}
+#cpanel #mensaje {
+  background: #dc1428;
+  border: 1px solid #dc1428;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  width: 99%;
+}
+#cpanel #mensaje a {
+  color: #ffd700;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+#cpanel #mensaje h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 8px;
+}
+#cpanel .capitulo {
+  background: #dc1428;
+  border: 1px solid #dc1428;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 986px;
+}
+#cpanel .capitulo.activo div {
+  display: block;
+}
+#cpanel .capitulo.activo .nombre {
+  display: none;
+}
+#cpanel .capitulo div {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+#cpanel .capitulo div a {
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 5px 0 #ffd700;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 16px;
+  text-align: center;
+  width: 48 8px;
+}
+#cpanel .capitulo div a:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+#cpanel .capitulo div form {
+  padding: 0;
+}
+#cpanel .capitulo div form .borrar {
+  background: #dc1428;
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 5px 0 #ffd700;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  padding: 16px;
+  width: 48 8px;
+}
+#cpanel .capitulo div form .borrar:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+#cpanel .capitulo div h3 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 8px;
+  width: 50%;
+}
+#cpanel .capitulo div img {
+  float: left;
+  height: 137px;
+  width: 24 4px;
+}
+#cpanel .capitulo div span {
+  background: #dc1428;
+  border-radius: 0 8px 8px 0;
+  color: #ffd700;
+  display: block;
+  font-size: 20px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  top: 8px;
+}
+#cpanel .capitulo .nombre {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 8px;
+}
+#cpanel .capitulo#error {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  width: 99%;
+}
+#cpanel .capitulo#error h3 {
+  font-size: 32px;
+}
+#cpanel .entrada {
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  position: relative;
+  width: 490px;
+}
+#cpanel .entrada a {
+  background: #dc1428;
+  bottom: 0;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+}
+#cpanel .entrada div {
+  color: #dc1428;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
+}
+#cpanel .entrada form {
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+#cpanel .entrada form input {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  font-size: 12px;
+  padding: 5px;
+}
+#cpanel .entrada h3 {
+  border-bottom: 1px solid #dc1428;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+#cpanel p {
+  margin: 0;
+  padding: 5px;
+  text-align: justify;
+}
+#cpanel .menu {
+  border-bottom: 1px solid #dc1428;
+  font-size: 16px;
+  padding: 5px;
+  width: 990px;
+}
+#cpanel .menu a {
+  display: inline-block;
+  float: right;
+}
+#cpanel .menu a:hover {
+  text-decoration: underline;
+}
+#cpanel .menu form {
+  display: inline-block;
+  float: right;
+  padding: 0;
+}
+#cpanel .menu form input {
+  background: #fffffa;
+  border: none;
+  color: #dc1428;
+}
+#cpanel .menu span a {
+  float: none;
+}
+#cpanel .proyecto {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5%;
+  position: relative;
+  width: 24%;
+}
+#cpanel .proyecto h3 {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 1 8px;
+  left: 5px;
+  margin: 0;
+  padding: 2.5px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 5px;
+}
+#cpanel .proyecto img {
+  width: 100%;
+  z-index: 1;
+}
+#cpanel .proyecto form {
+  bottom: 5px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+}
+#cpanel .proyecto .borrar {
+  background: #dc1428;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+}
+#cpanel .proyecto span {
+  background: #dc1428;
+  color: #ffd700;
+  font-size: 16px;
+  padding: 4px;
+  position: absolute;
+}
+#cpanel .proyecto span.capitulos {
+  bottom: 5px;
+  left: 5px;
+}
+#cpanel .proyecto span.estado {
+  bottom: 37px;
+  left: 5px;
+}
+#cpanel .proyecto .modificar {
+  background: #dc1428;
+  bottom: 5px;
+  border: none;
+  color: #ffd700;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: #ffd700;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #dc1428;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #ffd700;
+  -webkit-box-shadow: inset 0 0 6px #fffffa;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ffd700;
+}

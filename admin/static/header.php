@@ -6,7 +6,7 @@
 	<title>SDX no Fansub</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="/css/normalize.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/admin/css/style.css" type="text/css" media="screen" />
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<script src="/js/modernizr-2.5.3.min.js"></script>
 	<!--[if lt IE 9]>
@@ -14,6 +14,7 @@
 	<![endif]-->
 	<script src='/google_analytics_auto.js'></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="/js/cpanel.capitulos.js"></script>
 </head>
 <body class="contenedor">
 	<figure id="riasimagen">

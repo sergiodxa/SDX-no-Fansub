@@ -1,8 +1,8 @@
 <?php
 
-$db_user = "root";
+$db_user = "usuario";
 
-$db_pass = "";
+$db_pass = "123456";
 
 $db_server = "localhost";
 
