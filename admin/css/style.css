@@ -99,10 +99,44 @@ section h2 {
   padding: 8px;
   text-align: center;
 }
-#riasimagen {
-  bottom: 0;
-  position: fixed;
+section form {
+  font-size: 16px;
+  padding: 12px;
+}
+section form input {
+  display: block;
+  width: 100%;
+}
+section form input#enviar {
+  background: #dc1428;
+  border: 2px solid #ffd700;
+  box-shadow: 0 5px 0 #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  margin: 8px auto;
+  padding: 8px;
+  width: 50%;
+}
+section form input#enviar:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+section form label {
+  display: block;
+}
+section form select {
+  width: 100%;
+}
+#agregar {
+  background: #dc1428;
+  color: #ffd700;
+  border-radius: 0 0 0 16px;
+  padding: 8px;
+  position: absolute;
   right: 0;
+  top: 0;
 }
 #cpanel {
   box-sizing: border-box;
@@ -110,177 +144,179 @@ section h2 {
   -webkit-box-sizing: border-box;
   font-size: 0;
 }
-#cpanel div {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+#cpanel aside {
   display: inline-block;
-  width: 50%;
+  font-size: 16px;
+  width: 250px;
 }
-#cpanel div div {
+#cpanel aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cpanel aside ul li {
+  border-right: 3px solid #dc1428;
+  border-bottom: 1px solid #dc1428;
+}
+#cpanel aside ul li:last-of-type {
+  border-radius: 0 0 16px 0;
+  border-bottom: 3px solid #dc1428;
+}
+#cpanel aside ul li a {
+  display: block;
+  padding: 4px;
+}
+#cpanel article,
+#cpanel section {
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  width: 750px;
+}
+#cpanel article h3,
+#cpanel section h3 {
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+#mensaje {
+  background: #dc1428;
+  border: 1px solid #dc1428;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 16px;
-  text-align: center;
-  width: 33.33333%;
-}
-#cpanel div div a.boton {
-  background: #dc1428;
-  border-radius: 45px;
-  color: #ffd700;
-  display: block;
-  font-size: 32px;
-  margin: 0 auto;
-  padding: 6.5px 0;
-  width: 50px;
-}
-#cpanel div div a.boton:hover {
-  background: #ffd700;
-  color: #dc1428;
-}
-#cpanel div h3 {
-  font-size: 24px;
-  text-align: center;
-}
-#cpanel .entrada {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
   display: inline-block;
   font-size: 16px;
   margin: 5px;
+  padding: 16px;
   position: relative;
-  width: 490px;
+  text-align: center;
+  width: 99%;
 }
-#cpanel .entrada a {
-  background: #dc1428;
-  bottom: 0;
+#mensaje a {
   color: #ffd700;
-  font-size: 12px;
-  padding: 5px;
-  position: absolute;
-  right: 0;
-}
-#cpanel .entrada div {
-  color: #dc1428;
-  font-size: 12px;
+  font-size: 24px;
   margin: 0;
-  padding: 5px 10px;
-}
-#cpanel .entrada form {
-  bottom: 0;
   padding: 0;
-  position: absolute;
+}
+#mensaje h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 8px;
+}
+#riasimagen {
+  bottom: 0;
+  position: fixed;
   right: 0;
 }
-#cpanel .entrada form input {
+.capitulo {
   background: #dc1428;
-  border: none;
-  color: #ffd700;
-  font-size: 12px;
-  padding: 5px;
+  border: 1px solid #dc1428;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 8px !important;
+  width: 734px !important;
 }
-#cpanel .entrada h3 {
-  border-bottom: 1px solid #dc1428;
+.capitulo.activo div {
+  display: block;
+}
+.capitulo.activo .nombre {
+  display: none;
+}
+.capitulo div {
+  display: none;
+  position: relative;
+}
+.capitulo div a {
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 5px 0 #ffd700;
+  color: #fff;
+  left: 371px;
+  padding: 8px;
+  position: absolute;
+  text-align: center;
+  top: 51.609375px;
+  width: 91.75px;
+}
+.capitulo div a:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+.capitulo div form {
+  padding: 0;
+}
+.capitulo div form .borrar {
+  background: #dc1428;
+  border: 2px solid #ffd700;
+  box-shadow: 0 5px 0 #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  padding: 8px;
+  position: absolute;
+  right: 4px;
+  top: 51.609375px;
+  width: 91.75px;
+}
+.capitulo div form .borrar:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+.capitulo div h4 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px;
+  height: 42px;
+  left: 371px;
+  margin: 0;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+.capitulo div img {
+  float: left;
+  height: 103.21875px;
+  width: 183.5px;
+}
+.capitulo div span {
+  background: #dc1428;
+  border-radius: 0 8px 8px 0;
+  color: #ffd700;
+  display: block;
   font-size: 20px;
-  margin: 0;
-  padding: 5px;
-}
-#cpanel p {
-  margin: 0;
-  padding: 5px;
-  text-align: justify;
-}
-#cpanel .menu {
-  border-bottom: 1px solid #dc1428;
-  font-size: 16px;
-  padding: 5px;
-  width: 990px;
-}
-#cpanel .menu a {
-  display: inline-block;
-  float: right;
-}
-#cpanel .menu a:hover {
-  text-decoration: underline;
-}
-#cpanel .menu form {
-  display: inline-block;
-  float: right;
-  padding: 0;
-}
-#cpanel .menu form input {
-  background: #fffffa;
-  border: none;
-  color: #dc1428;
-}
-#cpanel .menu span a {
-  float: none;
-}
-#cpanel .proyecto {
-  display: inline-block;
-  font-size: 16px;
-  margin: 0.5%;
-  position: relative;
-  width: 24%;
-}
-#cpanel .proyecto h3 {
-  background: #dc1428;
-  color: #ffd700;
-  font-size: 1 8px;
-  left: 5px;
-  margin: 0;
-  padding: 2.5px;
-  position: absolute;
-  right: 5px;
-  text-align: center;
-  top: 5px;
-}
-#cpanel .proyecto img {
-  width: 100%;
-  z-index: 1;
-}
-#cpanel .proyecto form {
-  bottom: 5px;
-  padding: 0;
-  position: absolute;
-  right: 5px;
-}
-#cpanel .proyecto .borrar {
-  background: #dc1428;
-  border: none;
-  color: #ffd700;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0;
-  padding: 4px;
-  text-align: center;
-}
-#cpanel .proyecto span {
-  background: #dc1428;
-  color: #ffd700;
-  font-size: 16px;
+  left: 0;
   padding: 4px;
   position: absolute;
+  top: 8px;
 }
-#cpanel .proyecto span.capitulos {
-  bottom: 5px;
-  left: 5px;
-}
-#cpanel .proyecto span.estado {
-  bottom: 37px;
-  left: 5px;
-}
-#cpanel .proyecto .modificar {
-  background: #dc1428;
-  bottom: 5px;
-  border: none;
-  color: #ffd700;
+.capitulo .nombre {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   display: inline-block;
   font-size: 16px;
   margin: 0;
-  padding: 4px;
-  position: absolute;
-  right: 5px;
+  padding: 4px 8px;
+}
+.capitulo#error {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 16px;
   text-align: center;
+  width: 99%;
+}
+.capitulo#error h3 {
+  font-size: 32px;
 }
 ::-webkit-scrollbar {
   width: 8px;
