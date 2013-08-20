@@ -99,36 +99,6 @@ section h2 {
   padding: 8px;
   text-align: center;
 }
-section form {
-  font-size: 16px;
-  padding: 12px;
-}
-section form input {
-  display: block;
-  width: 100%;
-}
-section form input#enviar {
-  background: #dc1428;
-  border: 2px solid #ffd700;
-  box-shadow: 0 5px 0 #ffd700;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: #fff;
-  margin: 8px auto;
-  padding: 8px;
-  width: 50%;
-}
-section form input#enviar:active {
-  box-shadow: none;
-  margin-top: 10px;
-}
-section form label {
-  display: block;
-}
-section form select {
-  width: 100%;
-}
 #agregar {
   background: #dc1428;
   color: #ffd700;
@@ -178,6 +148,42 @@ section form select {
   margin: 0;
   padding: 8px;
   text-align: center;
+}
+#cpanel article form,
+#cpanel section form {
+  font-size: 16px;
+  padding: 12px;
+}
+#cpanel article form input,
+#cpanel section form input {
+  display: block;
+  width: 100%;
+}
+#cpanel article form input#enviar,
+#cpanel section form input#enviar {
+  background: #dc1428;
+  border: 2px solid #ffd700;
+  box-shadow: 0 5px 0 #ffd700;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  margin: 8px auto;
+  padding: 8px;
+  width: 50%;
+}
+#cpanel article form input#enviar:active,
+#cpanel section form input#enviar:active {
+  box-shadow: none;
+  margin-top: 10px;
+}
+#cpanel article form label,
+#cpanel section form label {
+  display: block;
+}
+#cpanel article form select,
+#cpanel section form select {
+  width: 100%;
 }
 #mensaje {
   background: #dc1428;
