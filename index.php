@@ -14,12 +14,13 @@ $peticion = mysql_query("SELECT * FROM proyectos ORDER BY anime ASC", $conexion)
 if ($proyectos = mysql_fetch_array($peticion)) {
 
 	echo '
-		<h2>Proyectos</h2>';
+		<h2>Proyectos</h2>
+		<div id="cambioDiseno"><a href="#" id="grilla-25"></a><a href="#" id="grilla-50"></a><a href="#" id="lista"></a></div>';
 
 	do {
 
 		echo '
-		<article class="proyecto">
+		<article class="proyecto grilla-25">
 			<figure class="portada_proyecto">
 				<img src="/img/proyectos/'.$proyectos["link"].'.jpg" />
 			</figure>

@@ -18,6 +18,15 @@ transition()
 	font-style normal
 	font-weight 400
 	src local('Oswald Regular'), local('Oswald-Regular'), url("http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff") format('woff')
+@font-face
+	font-family 'iconos'
+	src url('/fonts/fontawesome.eot')
+	src url('/fonts/fontawesome.eot?#iefix') format('embedded-opentype')
+	src url('/fonts/fontawesome.woff') format('woff')
+	src url('/fonts/fontawesome.ttf') format('truetype')
+	src url('/fonts/fontawesome.svg#fontawesome') format('svg')
+	font-weight normal
+	font-style normal
 // Estilos
 *
 	vertical-align top
@@ -37,6 +46,7 @@ footer
 	border-top fuente*.25 solid carmesi
 	box-sizing 0
 	padding fuente*.5
+	position relative
 	text-align center
 	width 100%
 h1
@@ -88,6 +98,11 @@ section
 		margin 0
 		padding fuente*.5
 		text-align center
+#cambioDiseno
+	display none
+	position absolute
+	right fuente*.5
+	top fuente
 #cont_pagina
 		h3
 			margin 0
@@ -109,11 +124,21 @@ section
 	width 99%
 	h3
 		font-size fuente*2
+#github
+	bottom fuente*.25
+	color black
+	font-family iconos
+	font-size fuente*1.25
+	position absolute
+	right fuente*.25
+#github:before
+	content "\f113"
 #pagina
 	text-align justify
 #proyectos
 	box-sizing 0
 	font-size 0
+	position relative
 #riasimagen
 	bottom 0
 	display none
@@ -210,7 +235,8 @@ section
 	background carmesi
 	border-radius 0 0 fuente*1.5 0
 	color dorado
-	font-size fuente*1.125
+	font-size fuente*1
+	font-weight normal
 	left 0
 	margin 0
 	padding 5px 15px 5px 5px
@@ -222,6 +248,7 @@ section
 	font-size fuente
 	margin .5%
 	position relative
+	-webkit-transition .75s all ease-in-out .25s
 	width 99%
 .portada_proyecto
 	max-width 100%
@@ -320,6 +347,32 @@ section
 	background dorado
 // De 640px para arriba
 @media screen and (min-width: 640px) {
+	#cambioDiseno {
+		display block
+	}
+	#grilla-25 {
+		font-family: 'iconos';
+		font-size 0
+		height fuente
+		padding fuente*.25
+		width fuente
+	}
+	#grilla-50, #lista {
+		font-family: 'iconos';
+		font-size fuente*1.75
+		height fuente
+		padding fuente*.25
+		width fuente
+	}
+	#grilla-25:before {
+		content: "\f00a";
+	}
+	#grilla-50:before {
+		content: "\f009";
+	}
+	#lista:before {
+		content: "\f00b";
+	}
 	#disqus_thread {
 		display block
 	}
@@ -327,9 +380,15 @@ section
 		display inline-block
 		width 50%
 	}
+	.grilla-50 {
+		width 49%
+	}
 	.imagen_anime {
 		float left
 		width 50%
+	}
+	.lista {
+		width 99%
 	}
 	.titulo_anime {
 		display inline-block
@@ -341,8 +400,11 @@ section
 	nav ul li {
 		width auto
 	}
-	.proyecto {
-		width 49%
+	#grilla-25 {
+		font-size fuente*1.75
+	}
+	.grilla-25 {
+		width 24%
 	}
 	.anime {
 		width 49%

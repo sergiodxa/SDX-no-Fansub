@@ -4,6 +4,16 @@
   font-weight: 400;
   src: local('Oswald Regular'), local('Oswald-Regular'), url("http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff") format('woff');
 }
+@font-face {
+  font-family: 'iconos';
+  src: url("/fonts/fontawesome.eot");
+  src: url("/fonts/fontawesome.eot?#iefix") format('embedded-opentype');
+  src: url("/fonts/fontawesome.woff") format('woff');
+  src: url("/fonts/fontawesome.ttf") format('truetype');
+  src: url("/fonts/fontawesome.svg#fontawesome") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   vertical-align: top;
 }
@@ -28,6 +38,7 @@ footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   padding: 8px;
+  position: relative;
   text-align: center;
   width: 100%;
 }
@@ -99,6 +110,12 @@ section h2 {
   padding: 8px;
   text-align: center;
 }
+#cambioDiseno {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 16px;
+}
 #cont_pagina h3 {
   margin: 0;
   padding: 8px;
@@ -126,6 +143,17 @@ section h2 {
 #error h3 {
   font-size: 32px;
 }
+#github {
+  bottom: 4px;
+  color: #000;
+  font-family: iconos;
+  font-size: 20px;
+  position: absolute;
+  right: 4px;
+}
+#github:before {
+  content: "\f113";
+}
 #pagina {
   text-align: justify;
 }
@@ -134,6 +162,7 @@ section h2 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-size: 0;
+  position: relative;
 }
 #riasimagen {
   bottom: 0;
@@ -254,7 +283,8 @@ section h2 {
   background: #dc1428;
   border-radius: 0 0 24px 0;
   color: #ffd700;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: normal;
   left: 0;
   margin: 0;
   padding: 5px 15px 5px 5px;
@@ -267,6 +297,7 @@ section h2 {
   font-size: 16px;
   margin: 0.5%;
   position: relative;
+  -webkit-transition: 0.75s all ease-in-out 0.25s;
   width: 99%;
 }
 .portada_proyecto {
@@ -387,6 +418,33 @@ section h2 {
   background: #ffd700;
 }
 @media screen and (min-width: 640px) {
+  #cambioDiseno {
+    display: block;
+  }
+  #grilla-25 {
+    font-family: 'iconos';
+    font-size: 0;
+    height: 16px;
+    padding: 4px;
+    width: 16px;
+  }
+  #grilla-50,
+  #lista {
+    font-family: 'iconos';
+    font-size: 28px;
+    height: 16px;
+    padding: 4px;
+    width: 16px;
+  }
+  #grilla-25:before {
+    content: "\f00a";
+  }
+  #grilla-50:before {
+    content: "\f009";
+  }
+  #lista:before {
+    content: "\f00b";
+  }
   #disqus_thread {
     display: block;
   }
@@ -394,9 +452,15 @@ section h2 {
     display: inline-block;
     width: 50%;
   }
+  .grilla-50 {
+    width: 49%;
+  }
   .imagen_anime {
     float: left;
     width: 50%;
+  }
+  .lista {
+    width: 99%;
   }
   .titulo_anime {
     display: inline-block;
@@ -407,8 +471,11 @@ section h2 {
   nav ul li {
     width: auto;
   }
-  .proyecto {
-    width: 49%;
+  #grilla-25 {
+    font-size: 28px;
+  }
+  .grilla-25 {
+    width: 24%;
   }
   .anime {
     width: 49%;
