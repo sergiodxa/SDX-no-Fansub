@@ -50,7 +50,7 @@ footer
 	text-align center
 	width 100%
 h1
-	font-size fuente*2
+	font-size fuente*1.5
 	margin 0
 	padding 0
 	text-align center
@@ -94,7 +94,7 @@ section
 		border fuente*.25 solid carmesi
 		border-left none
 		border-right none
-		font-size fuente*1.5
+		font-size fuente*1.25
 		margin 0
 		padding fuente*.5
 		text-align center
@@ -350,7 +350,10 @@ section
 	#cambioDiseno {
 		display block
 	}
-	#grilla-25 {
+	#cambioDiseno a:hover {
+		text-decoration none
+	}
+	#grilla-33 {
 		font-family: 'iconos';
 		font-size 0
 		height fuente
@@ -364,17 +367,17 @@ section
 		padding fuente*.25
 		width fuente
 	}
-	#grilla-25:before {
+	#grilla-33:before {
 		content: "\f00a";
 	}
 	#grilla-50:before {
 		content: "\f009";
 	}
-	#lista:before {
-		content: "\f00b";
-	}
 	#disqus_thread {
 		display block
+	}
+	#lista:before {
+		content: "\f00b";
 	}
 	.descargas_anime {
 		display inline-block
@@ -388,7 +391,40 @@ section
 		width 50%
 	}
 	.lista {
+		background carmesi
 		width 99%
+	}
+	.lista .capitulos_proyecto {
+		left 26%
+		padding 0 !important
+		top: 72px
+	}
+	.lista .estado_proyecto {
+		left 26%
+		padding 0
+		top: 51px
+	}
+	.lista .estado_proyecto:before {
+		content 'Estado del proyecto: '
+	}
+	.lista .nombre_proyecto {
+		font-size fuente*1.5
+		left 26%
+		padding 0
+		top 5px
+	}
+	.lista .portada_proyecto {
+		width 25%
+	}
+	.lista .ver_proyecto {
+		background blanco
+		color carmesi
+	}
+	.lista .ver_proyecto:after {
+		content ' capítulos'
+	}
+	.lista .ver_proyecto:hover {
+		text-decoration underline
 	}
 	.titulo_anime {
 		display inline-block
@@ -400,11 +436,11 @@ section
 	nav ul li {
 		width auto
 	}
-	#grilla-25 {
+	#grilla-33 {
 		font-size fuente*1.75
 	}
-	.grilla-25 {
-		width 24%
+	.grilla-33 {
+		width 32.33333%
 	}
 	.anime {
 		width 49%

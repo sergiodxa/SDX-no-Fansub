@@ -1,19 +1,19 @@
-$(document).ready(function() {
-//Cambio a modo grilla-25
-	$("#grilla-25").click(function() {
+$(document).on('ready', function() {
+//Cambio a modo grilla-33
+	$("#grilla-33").on('click',function() {
 		$(".proyecto").removeClass("grilla-50").removeClass('lista');
-		$(".proyecto").addClass("grilla-25");
+		$(".proyecto").addClass("grilla-33");
 		return false;
 	});
 //Cambio a modo grilla-50
-	$("#grilla-50").click(function() {
-		$(".proyecto").removeClass("grilla-25").removeClass('lista');
+	$("#grilla-50").on('click',function() {
+		$(".proyecto").removeClass("grilla-33").removeClass('lista');
 		$(".proyecto").addClass("grilla-50");
 		return false;
 	});
 //Cambio a modo grilla
-	$("#lista").click(function() {
-		$(".proyecto").removeClass("grilla-25").removeClass('grilla-50');
+	$("#lista").on('click',function() {
+		$(".proyecto").removeClass("grilla-33").removeClass('grilla-50');
 		$(".proyecto").addClass("lista");
 		return false;
 	});

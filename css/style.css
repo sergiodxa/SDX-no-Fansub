@@ -43,7 +43,7 @@ footer {
   width: 100%;
 }
 h1 {
-  font-size: 32px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -105,7 +105,7 @@ section h2 {
   border: 4px solid #dc1428;
   border-left: none;
   border-right: none;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   padding: 8px;
   text-align: center;
@@ -421,7 +421,10 @@ section h2 {
   #cambioDiseno {
     display: block;
   }
-  #grilla-25 {
+  #cambioDiseno a:hover {
+    text-decoration: none;
+  }
+  #grilla-33 {
     font-family: 'iconos';
     font-size: 0;
     height: 16px;
@@ -436,17 +439,17 @@ section h2 {
     padding: 4px;
     width: 16px;
   }
-  #grilla-25:before {
+  #grilla-33:before {
     content: "\f00a";
   }
   #grilla-50:before {
     content: "\f009";
   }
-  #lista:before {
-    content: "\f00b";
-  }
   #disqus_thread {
     display: block;
+  }
+  #lista:before {
+    content: "\f00b";
   }
   .descargas_anime {
     display: inline-block;
@@ -460,7 +463,40 @@ section h2 {
     width: 50%;
   }
   .lista {
+    background: #dc1428;
     width: 99%;
+  }
+  .lista .capitulos_proyecto {
+    left: 26%;
+    padding: 0 !important;
+    top: 72px;
+  }
+  .lista .estado_proyecto {
+    left: 26%;
+    padding: 0;
+    top: 51px;
+  }
+  .lista .estado_proyecto:before {
+    content: 'Estado del proyecto: ';
+  }
+  .lista .nombre_proyecto {
+    font-size: 24px;
+    left: 26%;
+    padding: 0;
+    top: 5px;
+  }
+  .lista .portada_proyecto {
+    width: 25%;
+  }
+  .lista .ver_proyecto {
+    background: #fffffa;
+    color: #dc1428;
+  }
+  .lista .ver_proyecto:after {
+    content: ' capítulos';
+  }
+  .lista .ver_proyecto:hover {
+    text-decoration: underline;
   }
   .titulo_anime {
     display: inline-block;
@@ -471,11 +507,11 @@ section h2 {
   nav ul li {
     width: auto;
   }
-  #grilla-25 {
+  #grilla-33 {
     font-size: 28px;
   }
-  .grilla-25 {
-    width: 24%;
+  .grilla-33 {
+    width: 32.33333%;
   }
   .anime {
     width: 49%;

@@ -15,12 +15,16 @@ if ($proyectos = mysql_fetch_array($peticion)) {
 
 	echo '
 		<h2>Proyectos</h2>
-		<div id="cambioDiseno"><a href="#" id="grilla-25"></a><a href="#" id="grilla-50"></a><a href="#" id="lista"></a></div>';
+		<div id="cambioDiseno">
+			<a href="#" id="grilla-33" title="Elementos en grilla de 3 columnas"></a>
+			<a href="#" id="grilla-50" title="Elementos en grilla de 2 columnas"></a>
+			<a href="#" id="lista" title="Elementos listados"></a>
+		</div>';
 
 	do {
 
 		echo '
-		<article class="proyecto grilla-25">
+		<article class="proyecto lista">
 			<figure class="portada_proyecto">
 				<img src="/img/proyectos/'.$proyectos["link"].'.jpg" />
 			</figure>
