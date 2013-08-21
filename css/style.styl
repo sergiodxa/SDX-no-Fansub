@@ -37,22 +37,28 @@ a
 		text-decoration underline
 body
 	background carmesi
+	box-sizing 0
 	color black
-	font fuente Helvetica, Arial, sans-serif
+	font 0 Helvetica, Arial, sans-serif
 	margin 0 auto
 	max-width 1000px
 footer
 	background blanco
 	border-top fuente*.25 solid carmesi
 	box-sizing 0
+	font-size fuente
 	padding fuente*.5
 	position relative
-	text-align center
+	text-align justify
+	vertical-align top
 	width 100%
+	#licence
+		float left
+		margin-right 5px
 h1
-	font-size fuente*1.5
+	font-size fuente*2
 	margin 0
-	padding 0
+	padding 5.5px
 	text-align center
 h1, h2, h3
 	font-family 'Oswald', sans-serif
@@ -94,7 +100,7 @@ section
 		border fuente*.25 solid carmesi
 		border-left none
 		border-right none
-		font-size fuente*1.25
+		font-size fuente*1.5
 		margin 0
 		padding fuente*.5
 		text-align center
@@ -347,6 +353,14 @@ section
 	background dorado
 // De 640px para arriba
 @media screen and (min-width: 640px) {
+	header {
+		display inline-block
+		width 40%
+	}
+	nav {
+		display inline-block
+		width 60%
+	}
 	#cambioDiseno {
 		display block
 	}
@@ -433,9 +447,6 @@ section
 }
 // Cambiar a diseño para desktop
 @media screen and (min-width: 728px) {
-	nav ul li {
-		width auto
-	}
 	#grilla-33 {
 		font-size fuente*1.75
 	}
