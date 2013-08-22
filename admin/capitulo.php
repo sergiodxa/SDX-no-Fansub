@@ -102,7 +102,7 @@ elseif ($_GET[c]==true) {
 elseif ($_GET[s]=="agregado") {
 	// Agregamos el nuevo capítulo
 	$link = $_POST[link];
-	$sql = "INSERT INTO capitulos (anime, numero, titulo, link, subs, torrent, magnet, mega) VALUES ('$_POST[anime]', '$_POST[numero]', '$_POST[titulo]', '$link', '$_POST[subs]', '$_POST[torrent]', '$_POST[magnet]', '$_POST[mega]')";
+	$sql = "INSERT INTO capitulos (anime, numero, titulo, link, purista, weabo, torrent, magnet, mega) VALUES ('$_POST[anime]', '$_POST[numero]', '$_POST[titulo]', '$link', '$_POST[purista]', '$_POST[weabo]', '$_POST[torrent]', '$_POST[magnet]', '$_POST[mega]')";
 	$result = mysql_query($sql);
 	// Sumamos 1 a la cantidad de capítulos del proyecto elegido
 	$sql2 = mysql_query("SELECT * FROM proyectos WHERE link='$link'", $conexion);

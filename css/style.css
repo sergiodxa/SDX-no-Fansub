@@ -85,7 +85,6 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
   width: 100%;
 }
 nav ul li {
@@ -108,6 +107,7 @@ nav ul li a:hover {
 }
 section {
   background: #fffffa;
+  font-size: 16px;
   width: 100%;
 }
 section h2 {
@@ -306,7 +306,6 @@ section h2 {
   font-size: 16px;
   margin: 0.5%;
   position: relative;
-  -webkit-transition: 0.75s all ease-in-out 0.25s;
   width: 99%;
 }
 .portada_proyecto {
