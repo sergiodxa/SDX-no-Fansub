@@ -108,7 +108,8 @@ elseif ($_GET[s]=="agregado") {
 	$sql2 = mysql_query("SELECT * FROM proyectos WHERE link='$link'", $conexion);
 	$capi = mysql_fetch_array($sql2);
 	$cap = $capi[capitulos]+1;
-	$sql3 = "UPDATE proyectos SET capitulos='$cap' WHERE link='$link'";
+	$date = date("Y-m-d");
+	$sql3 = "UPDATE proyectos SET capitulos='$cap', actualizacion='$date' WHERE link='$link'";
 	$result2 = mysql_query($sql3);
 	echo '
 			<div id="mensaje">
